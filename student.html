@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Management</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/student-style.css">
+</head>
+<body>
+  <header>
+    <h1>Student Management</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="student.html">Students</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Add Student</h2>
+      <form action="student.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+          <option value="">Select Course</option>
+          <option value="CS">Computer Science</option>
+          <option value="EC">Electronics and communication</option>
+          <option value="ME">Mechatronics</option>
+        </select>
+        <button class="btn" onclick="confirm('Are you sure you want to add the details')">Add Student</button>
+      </form>
+    </section>
+
+    <!-- <section>
+      <h2>Student List</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Course</th>
+        </tr>
+        <tr>
+          <td>John Doe</td>
+          <td>johndoe@example.com</td>
+          <td>Computer Science</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>janesmith@example.com</td>
+          <td>Engineering</td>
+        </tr>
+      </table>
+    </section> -->
+  </main>
+
+  <footer>
+    <p>&copy; 2022 College Management System. All rights reserved.</p>
+  </footer>
+</body>
+</html>

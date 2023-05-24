@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Faculty Management</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/faculty-style.css">
+</head>
+<body>
+  <header>
+    <h1>Faculty Management</h1>
+  </header>
+
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="student.html">Students</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Add Faculty</h2>
+      <form action="faculty.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required>
+
+        <button class="btn" onclick="confirm('Are you sure you want to add details')">Add Faculty</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2022 College Management System. All rights reserved.</p>
+  </footer>
+</body>
+</html>
